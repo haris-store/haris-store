@@ -33,7 +33,7 @@ function displayLaptops(data) {
 }
 
 function buyNow(name) {
-  const phone = "91XXXXXXXXXX"; // replace with your number
+  const phone = "917591908563"; // replace with your number
   const msg = `Hi, I'm interested in ${name}`;
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`);
 }
