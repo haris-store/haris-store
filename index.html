@@ -1,32 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hari's Store - Laptops</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LapZone - New & Used Laptops</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+/* Header */
+
+header{
+    background:#131921;
+    color:white;
+    padding:15px 5%;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#ff9900;
+}
+
+.search-box{
+    flex:1;
+    margin:0 20px;
+}
+
+.search-box input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url("https://images.unsplash.com/photo-1496181133206-80ce9b88a853");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.1rem;
+}
+
+/* Products */
+
+.section{
+    width:90%;
+    margin:40px auto;
+}
+
+.section-title{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.badge{
+    background:#cc0c39;
+    color:white;
+    padding:4px 10px;
+    border-radius:5px;
+    font-size:12px;
+}
+
+.card h3{
+    margin:12px 0;
+}
+
+.price{
+    font-size:28px;
+    color:#B12704;
+    font-weight:700;
+}
+
+.old-price{
+    color:#666;
+    text-decoration:line-through;
+    margin-left:8px;
+}
+
+.specs{
+    color:#555;
+    margin:12px 0;
+    line-height:1.7;
+}
+
+.btns{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.buy{
+    flex:1;
+    background:#FFD814;
+    color:#111;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.whatsapp{
+    flex:1;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:10px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+/* Why Us */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* Footer */
+
+footer{
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2rem;
+}
+
+.search-box{
+    width:100%;
+    margin-top:15px;
+}
+
+.navbar{
+    flex-direction:column;
+}
+
+}
+</style>
 </head>
-  <nav>
-  <a href="index.html">Home</a>
-  <a href="laptops.html">Laptops</a>
-  <a href="contact.html">Contact</a>
-</nav>
+
 <body>
 
-  <header>
-    <h1>Tech Reboot 💻</h1>
-    <p>Buy Quality New & Used Laptops at Best Price</p>
-  </header>
+<header>
+    <div class="navbar">
+        <div class="logo">LapZone</div>
 
-  <section class="search">
-    <input type="text" id="searchBox" placeholder="Search laptops...">
-  </section>
+        <div class="search-box">
+            <input type="text" placeholder="Search laptops...">
+        </div>
 
-  <section id="laptopList" class="grid"></section>
+        <div>📞 +91 98765 43210</div>
+    </div>
+</header>
 
-  <footer>
-    <p>© 2026 Hari's Store | Contact on WhatsApp for orders</p>
-  </footer>
+<section class="hero">
+    <h1>New & Used Laptops at Great Prices</h1>
+    <p>Business • Student • Gaming • Workstation Laptops</p>
+</section>
 
-  <script src="script.js"></script>
+<section class="section">
+
+    <h2 class="section-title">Featured Deals</h2>
+
+    <div class="products">
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8">
+
+            <div class="card-content">
+
+                <span class="badge">Used - Excellent</span>
+
+                <h3>Dell Latitude 5420</h3>
+
+                <div>
+                    <span class="price">₹28,999</span>
+                    <span class="old-price">₹34,999</span>
+                </div>
+
+                <div class="specs">
+                    Intel i5 11th Gen<br>
+                    16GB RAM<br>
+                    512GB SSD
+                </div>
+
+                <div class="btns">
+                    <button class="buy">Buy Now</button>
+
+                    <a class="whatsapp"
+                    href="https://wa.me/919876543210">
+                    WhatsApp
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1593642634443-44adaa06623a">
+
+            <div class="card-content">
+
+                <span class="badge">New</span>
+
+                <h3>Lenovo ThinkPad E14</h3>
+
+                <div>
+                    <span class="price">₹54,999</span>
+                    <span class="old-price">₹59,999</span>
+                </div>
+
+                <div class="specs">
+                    Ryzen 5<br>
+                    16GB RAM<br>
+                    512GB SSD
+                </div>
+
+                <div class="btns">
+                    <button class="buy">Buy Now</button>
+
+                    <a class="whatsapp"
+                    href="https://wa.me/919876543210">
+                    WhatsApp
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1484788984921-03950022c9ef">
+
+            <div class="card-content">
+
+                <span class="badge">Gaming</span>
+
+                <h3>ASUS TUF Gaming</h3>
+
+                <div>
+                    <span class="price">₹69,999</span>
+                    <span class="old-price">₹79,999</span>
+                </div>
+
+                <div class="specs">
+                    Ryzen 7<br>
+                    RTX Graphics<br>
+                    16GB RAM
+                </div>
+
+                <div class="btns">
+                    <button class="buy">Buy Now</button>
+
+                    <a class="whatsapp"
+                    href="https://wa.me/919876543210">
+                    WhatsApp
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Why Customers Choose Us</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>✔ Quality Checked</h3>
+<p>Every laptop is tested before delivery.</p>
+</div>
+
+<div class="feature">
+<h3>✔ Warranty Available</h3>
+<p>Selected laptops include warranty options.</p>
+</div>
+
+<div class="feature">
+<h3>✔ Best Prices</h3>
+<p>Affordable pricing on new and used devices.</p>
+</div>
+
+<div class="feature">
+<h3>✔ Fast Support</h3>
+<p>Quick WhatsApp and phone assistance.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+    <h3>LapZone</h3>
+    <p>New & Used Laptops</p>
+    <p>support@lapzone.com</p>
+    <p>+91 98765 43210</p>
+</footer>
+
 </body>
 </html>
