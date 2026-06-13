@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dell Latitude 5420 | LapZone</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+}
+
+header{
+    background:#131921;
+    color:white;
+    padding:15px 5%;
+}
+
+.logo{
+    color:#ff9900;
+    font-size:28px;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.container{
+    max-width:1300px;
+    margin:30px auto;
+    padding:0 20px;
+}
+
+.product{
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.product-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+.product-title{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.rating{
+    color:#ff9900;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:36px;
+    color:#B12704;
+    font-weight:700;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:#666;
+    margin-left:10px;
+}
+
+.save{
+    color:green;
+    font-weight:600;
+}
+
+.stock{
+    color:green;
+    font-weight:600;
+    margin:15px 0;
+}
+
+.specs{
+    margin-top:25px;
+}
+
+.specs ul{
+    padding-left:20px;
+    line-height:2;
+}
+
+.buy-box{
+    margin-top:30px;
+    border:1px solid #ddd;
+    padding:20px;
+    border-radius:10px;
+    background:#fafafa;
+}
+
+.btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.buy{
+    background:#FFD814;
+}
+
+.cart{
+    background:#FFA41C;
+}
+
+.whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+.description{
+    background:white;
+    margin-top:30px;
+    padding:30px;
+    border-radius:12px;
+}
+
+footer{
+    margin-top:40px;
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:900px){
+    .product{
+        grid-template-columns:1fr;
+    }
+
+    .product-title{
+        font-size:24px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">LapZone</a>
+</header>
+
+<div class="container">
+
+    <div class="product">
+
+        <div class="product-image">
+            <img src="images/dell-latitude-5420.jpg"
+                 alt="Dell Latitude 5420">
+        </div>
+
+        <div>
+
+            <h1 class="product-title">
+                Dell Latitude 5420 Business Laptop
+            </h1>
+
+            <div class="rating">
+                ★★★★☆ (4.6/5)
+            </div>
+
+            <div>
+                <span class="price">₹28,999</span>
+                <span class="old-price">₹34,999</span>
+            </div>
+
+            <p class="save">
+                Save ₹6,000
+            </p>
+
+            <p class="stock">
+                ✔ In Stock
+            </p>
+
+            <div class="specs">
+
+                <h3>Specifications</h3>
+
+                <ul>
+                    <li>Intel Core i5 11th Generation</li>
+                    <li>16GB DDR4 RAM</li>
+                    <li>512GB NVMe SSD</li>
+                    <li>14-inch Full HD Display</li>
+                    <li>Windows 11 Pro</li>
+                    <li>Wi-Fi & Bluetooth</li>
+                    <li>Backlit Keyboard</li>
+                    <li>USB-C, HDMI, USB 3.0</li>
+                </ul>
+
+            </div>
+
+            <div class="buy-box">
+
+                <h3>Condition</h3>
+                <p>Used - Excellent Condition</p>
+
+                <br>
+
+                <h3>Warranty</h3>
+                <p>30 Days Testing Warranty</p>
+
+                <button class="btn buy">
+                    Buy Now
+                </button>
+
+                <button class="btn cart">
+                    Add to Cart
+                </button>
+
+                <button class="btn whatsapp"
+                onclick="window.location.href='https://wa.me/919876543210?text=Hi%20I%20am%20interested%20in%20the%20Dell%20Latitude%205420';">
+                    Contact on WhatsApp
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="description">
+
+        <h2>Product Description</h2>
+
+        <br>
+
+        <p>
+            The Dell Latitude 5420 is a reliable business-class
+            laptop designed for professionals, students, and
+            office users. Equipped with an Intel Core i5
+            processor, 16GB RAM, and a fast 512GB SSD,
+            it delivers excellent performance for multitasking,
+            web browsing, office work, programming,
+            online meetings, and everyday productivity.
+        </p>
+
+        <br>
+
+        <p>
+            This device has been professionally tested,
+            cleaned, and verified to ensure excellent
+            working condition.
+        </p>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 LapZone | New & Used Laptops
+</footer>
+
+</body>
+</html>
